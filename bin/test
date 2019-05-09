@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'bundler/setup'
+require 'net/smtp'
+
+message = <<~END.split("\n").map!(&:strip).join("\n")
+  From: Private Person <from@smtp.mailtrap.io>
+  To: A Test User <to@smtp.mailtrap.io>
+  Subject: Hello world!
+
+  This is a test e-mail message.
+END
+
+Net::SMTP.start('smtp.mailtrap.io',
+                2525,
+                'smtp.mailtrap.io',
+                '41e2c570cb356c', '9f7b8910f78c68', :cram_md5) do |smtp|
+  smtp.send_message message, 'from@smtp.mailtrap.io',
+                    'to@smtp.mailtrap.io'
+end

@@ -1,0 +1,18 @@
+pinger:
+  verbose: false
+  delay: 60
+  hosts:
+    - https://google.com
+    - http://localhost
+    - https://arpa.net
+  mail:
+    smtp:
+      hostname: 'smtp.mailtrap.io'
+      port: 2525
+      username: '41e2c570cb356c'
+      password: '9f7b8910f78c68'
+      auth: 'cram_md5'
+    credentials:
+      from: Pinger Sender <from@smtp.mailtrap.io>
+      to: Pinger Receiver <to@smtp.mailtrap.io>
+      subject: Servers state!

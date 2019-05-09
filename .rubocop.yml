@@ -1,0 +1,14 @@
+require: rubocop-performance
+
+Metrics/BlockLength:
+  Max: 300
+  Include:
+    - 'spec/**/*_spec.rb'
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/LineLength:
+  Max: 150
+  Include:
+    - '*.gemspec'
