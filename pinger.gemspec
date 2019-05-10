@@ -12,9 +12,9 @@ Gem::Specification.new do |spec|
   spec.email         = ['s.bezugliy@gmail.com']
   spec.license       = 'Apache-2.0'
 
-  spec.summary       = 'Test task for employment process to the pokupon.ua'
+  spec.summary       = 'HTTP ping utility'
   spec.description   = <<-DESCRIPTION
-    Test task for employment process to the pokupon.ua
+    HTTP ping utility
   DESCRIPTION
   spec.homepage = 'https://github.org/sbezugliy'
 
@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
     spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
     spec.metadata['homepage_uri'] = spec.homepage
-    spec.metadata['source_code_uri'] = 'https://github.org/sbezugliy'
+    spec.metadata['source_code_uri'] = 'https://github.org/sbezugliy/pinger'
     # spec.metadata['changelog_uri'] = ''
   else
     raise 'RubyGems 2.0 or newer is required to protect against ' \
