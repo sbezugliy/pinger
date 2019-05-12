@@ -15,7 +15,7 @@ END
 Net::SMTP.start('smtp.mailtrap.io',
                 2525,
                 'smtp.mailtrap.io',
-                '41e2c570cb356c', '9f7b8910f78c68', :cram_md5) do |smtp|
+                'xxx', 'yyy', :cram_md5) do |smtp|
   smtp.send_message message, 'from@smtp.mailtrap.io',
                     'to@smtp.mailtrap.io'
 end
