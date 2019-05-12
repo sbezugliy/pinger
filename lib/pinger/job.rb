@@ -40,7 +40,7 @@ module Pinger
       return true if (@current_state || @prev_state) && \
                      !(@current_state && @prev_state)
 
-      return false
+      false
     end
 
     private
