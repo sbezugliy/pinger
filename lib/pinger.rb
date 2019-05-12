@@ -3,7 +3,7 @@
 require 'pinger/version'
 
 ##
-# PokuponPinger module
+# Pinger module
 module Pinger
   require 'yaml'
 

@@ -1,4 +1,4 @@
-# PokuponPinger
+# Pinger
 
 1. Install bundler
    ```
@@ -17,8 +17,8 @@
      verbose: true
      delay: 10
      hosts:
-       - https://pokupon.ua
-       - https://partner.pokupon.ua
+       - https://host.org
+       - https://arpa.net
      mail:
        smtp:
          hostname: 'smtp.mailtrap.io'
@@ -44,6 +44,6 @@
 
    ```
 
-   bundle exec ./bin/pokupon_ping
+   bundle exec ./bin/ping
 
    ```

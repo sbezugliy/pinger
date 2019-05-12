@@ -1,9 +1,9 @@
 pinger:
-  verbose: false
+  verbose: true
   delay: 60
   hosts:
-    - https://pokupon.ua
-    - https://partner.pokupon.ua
+    - https://google.com
+    - https://arpa.net
   mail:
     smtp:
       hostname: 'smtp.mailtrap.io'
